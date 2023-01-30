@@ -218,7 +218,7 @@ class HomeState extends State<Home> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      VideoWatch(snapshot: snapshot)),
+                                      VideoWatch(snapshot: snapshot,name:name)),
                             );
                           },
                           child: Padding(

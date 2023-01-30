@@ -7,7 +7,8 @@ import 'VideoRecord.dart';
 // ignore: must_be_immutable
 class VideoWatch extends StatefulWidget {
   DataSnapshot snapshot;
-  VideoWatch({Key? key, required this.snapshot}) : super(key: key);
+  String name;
+  VideoWatch({Key? key, required this.snapshot,required this.name}) : super(key: key);
   @override
   State<VideoWatch> createState() => VideoWatchState();
 }
@@ -318,9 +319,9 @@ class VideoWatchState extends State<VideoWatch> {
                                           ]),
                                       child: const Icon(Icons.person))),
                             ),
-                            const Padding(
+                           Padding(
                               padding: EdgeInsets.all(8.0),
-                              child: Text("Name"),
+                              child: Text(widget.name)
                             )
                           ],
                         ),
